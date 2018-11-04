@@ -79,6 +79,13 @@ public class LoginUseCaseImp extends AbstractUseCase implements LoginUseCase {
                     callBack.LoginSucess();
                 }
             });
+        }else {
+            uiThread.post(new Runnable() {
+                @Override
+                public void run() {
+                    callBack.LoginFailed("用户名或密码错误");
+                }
+            });
         }
     }
 

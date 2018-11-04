@@ -28,8 +28,7 @@ public class AndroidApplication extends Application {
     public static boolean isSendData;
 
 
-    public static String IP;
-    public static String PART;
+
 
     @Override
     public void onCreate() {
